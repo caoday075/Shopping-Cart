@@ -1,0 +1,89 @@
+<!--  <div class="tab-pane" id="staff" role="tabpanel" aria-labelledby="staff-tab">
+                                <div class="col-sm-4">
+                                    <%
+                                        String valueSt = "";
+                                        String keywordSt = request.getParameter("txtSearchStaff");
+                                        if (keywordSt != null) {
+                                            valueSt = keywordSt;
+                                        }
+                                    %>
+
+
+                                    <form action="MainServlet" method="get">
+                                        <p> <input type="text" name="txtSearchStaff" value="<%= valueSt%>"> 
+                                            <input type="submit" value="Search" name="action"> 
+                                    </form>
+
+                                    <table style="font-size: 14px; width: 79vw" class="table_da">
+                                        <tr>
+                                            <th rowspan="2">#</th>
+                                            <th rowspan="2">ID</th>
+                                            <th rowspan="2">Username</th>                 
+                                            <th rowspan="2">Password</th>
+                                            <th rowspan="2">Full Name</th>                             
+                                            <th></th>                                     
+                                            <th rowspan="2">Status</th>
+                                            <th rowspan="2">Action</th>
+                                        </tr>   
+
+                                        <tr>
+                                            <th scope="col">Last Name</th>
+                                             <th scope="col">First Name</th>  
+
+                                        <%
+                                            List<StaffDTO> listT = (ArrayList) session.getAttribute("STAFFSLIST");
+
+                                            
+                                            if (listT != null) {
+                                                int count = 1;
+                                                for (StaffDTO item : listT) {
+                                                    String deleteURL = "MainServlet?usrDel=" + item.getUsername() + "&action=Delete&txtSearchStaff=" + valueSt;
+                                                    String editURL = "staffProfile.jsp?usrUpdate=" + item.getUsername();
+                                        %>      
+
+                                        <tr>
+                                            <td><%= count%></td>
+                                            <td><%= item.getId()%></td>
+                                            <td><%= item.getUsername()%></td>
+                                            <td><%= item.getPassword()%></td>
+                                            <td><%= item.getFullname()%></td>                                                                             
+                                            <td class="cell_active_table_da">
+                                                <%
+                                                    if (item.getStatus() == 1) {
+                                                %>                                                
+                                                <p class="active_table_da">ACTIVE</p>
+
+                                                <%
+                                                } else {
+                                                %>
+                                                <p class="deactive_member_da">INACTIVE</p>
+                                                <%
+                                                    }
+                                                %>
+                                            </td>    
+
+                                            <td>
+                                                <a href="javascript:void(0)" class="view_action_da">
+                                                    <i class="fa fa-eye"></i>
+                                                </a>                    
+                                                <a href="<%= editURL%>" class="edit_action_da">
+                                                    <i class="fa fa-pencil"></i>
+                                                </a>
+                                                <a href="<%= deleteURL%>" class="delete_action_da">
+                                                    <i class="fa fa-trash"></i>
+                                                </a>    
+                                            </td>
+                                        </tr>
+
+                                        <%
+                                                    count++;
+                                                }
+                                            }
+                                        %>
+
+                                    </table>
+
+                                </div>
+                            </div>
+
+ -->

@@ -1,0 +1,248 @@
+
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+body{
+    font-family: 'Mukta', sans-serif;
+    height:100vh;
+    min-height:550px;
+    background-image:url(../images/architecture-buildings-city-373965.jpg);
+    /*background: #212529;*/
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    overflow-y: hidden;
+}
+a{
+    text-decoration:none;
+    color:#444444;
+}
+.login-reg-panel{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align:center;
+    width:70%;
+    right:0;left:0;
+    margin:auto;
+    height:400px;
+    /*background: linear-gradient(to bottom right, #f47820 0%, #f47820 100%);*/
+    background-color: rgba(30,30,30, 0.9);
+}
+.white-panel{
+    background-color: rgba(255,255, 255, 1);
+    height:500px;
+    position:absolute;
+    top:-50px;
+    width:50%;
+    right:calc(50% - 50px);
+    transition:.3s ease-in-out;
+    z-index:0;
+}
+.login-reg-panel input[type="radio"]{
+    position:relative;
+    display:none;
+}
+.login-reg-panel{
+    color:#B8B8B8;
+}
+.login-reg-panel #label-login, 
+.login-reg-panel #label-register{
+    border:1.5px solid white !important;
+    padding:0 5px;
+    width: 200px;
+    display:block;
+    text-align:center;
+    border-radius:3px;
+    cursor:pointer;
+}
+#label-register-wrapper:hover #label-register  {
+    background-color: white;
+    color: black !important;
+}
+#label-login-wrapper:hover #label-login {
+    background-color: white;
+    color: black !important;
+}
+.login-info-box{
+    width:30%;
+    padding:0 50px;
+    top:20%;
+    left:0;
+    position:absolute;
+    text-align:left;
+    color: white;
+}
+.register-info-box{
+    width:30%;
+    padding:0 50px;
+    top:20%;
+    right:0;
+    position:absolute;
+    text-align:left;
+    color: white;
+}
+.right-log{right:50px !important;}
+
+.login-show, 
+.register-show{
+    z-index: 1;
+    display:none;
+    opacity:0;
+    transition:0.3s ease-in-out;
+    color:#242424;
+    text-align:left;
+    padding:50px;
+}
+.show-log-panel{
+    display:block;
+    opacity:0.9;
+}
+/*.login-show input[type="text"], .login-show input[type="password"]{
+    width: 100%;
+    display: block;
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #b5b5b5;
+    outline: none;
+}*/
+.login-show input[type="button"] {
+    max-width: 150px;
+    width: 100%;
+    background: #444444;
+    color: #f9f9f9;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    float:right;
+    cursor:pointer;
+}
+.login-show a{
+    display:inline-block;
+    padding:10px 0;
+}
+/*.register-show input[type="text"], .register-show input[type="password"]{
+    width: 100%;
+    display: block;
+    margin:20px 0;
+    padding: 15px;
+    border: 1px solid #b5b5b5;
+    outline: none;
+}*/
+.register-show input[type="button"] {
+    max-width: 150px;
+    width: 100%;
+    background: #444444;
+    color: #f9f9f9;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    float:right;
+    cursor:pointer;
+}
+.credit {
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    color: #3B3B25;
+    margin: 0;
+    padding: 0;
+    font-family: Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 99;
+}
+a{
+    text-decoration:none;
+    color:#eaeaea;
+}
+
+h2 {
+    margin: 0;
+}
+h4 {
+    margin: 5px !important;
+    color: red;
+}
+
+.loginFailure {
+    color: red;
+}
+
+.btnLogin {
+    width: 25%;
+    height: 35px;
+    color: white;
+    background-color: #00C872;
+    border: none;
+}
+.btnLogin:hover {
+    background-color: #0099e5;
+    cursor: pointer;
+}
+
+
+
+.group {
+    position: relative;
+    /*max-width: 300px;*/
+    margin: 30px 0;
+}
+.group input,
+.group input:empty {
+    width: 100%;
+    border: none;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+    outline: none;
+    padding: 12px 0; 
+    font-size: 16px;
+    transition: all .2s ease;
+}
+.group input:focus {
+    border-color: transparent;
+}
+.group label,
+.group input:empty ~ label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    font-size: 20px;
+    color: black;
+    transform: translateY(-50%);
+    transition: all .2s ease;
+}
+.group input:focus ~ label,
+.group input:valid ~ label {
+    top: -8px;
+    left: 0px;
+    font-size: 18px;
+    color: blue;
+}
+
+.group .bar {
+    display: flex;
+    /*Start animation at center*/
+    justify-content: center;
+}
+.bar:before, .bar:after     {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #3498db;
+    transition: all .2s ease;
+}
+.goup .bar:before {
+    left: 50%;
+}
+.group .bar:after {
+    right: 50%;
+}
+.group input:focus ~ .bar:before,
+.group input:focus ~ .bar:after {
+    width:50%;
+}
+

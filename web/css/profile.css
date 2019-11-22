@@ -1,0 +1,33 @@
+#profile_pic_duc {
+    width: 43px;
+}
+
+#avatar_wrapper_duc {
+    padding-top: 4%;
+}
+
+.nav > li > a {
+    color: black;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background: #EE9400;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    background: #EE9400;
+}
+
+.sidebar-hidden-duc {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+	.sidebar-hidden-duc{
+		display: block;
+	}
+	
+	.sidebar{
+		display: none;
+	}
+}

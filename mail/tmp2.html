@@ -1,0 +1,70 @@
+<table bgcolor="#EEEEEE" cellpadding="0" cellspacing="0" style="width: 100%;">
+    <tbody>
+        <tr>
+            <td valign="top" align="center" width="100%">
+                <table align="center" bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" style="margin-top: 10px; margin-bottom: 10px; width: 600px;">
+                    <tbody>
+                        <tr>
+                            <td bgcolor="#FFFFFF" valign="top" style="font-size: 12px; color: #666666; line-height: 150%; font-family: Arial; text-align: left; padding: 20px;" width="600">
+                                <table cellpadding="0" cellspacing="0" style="width: 100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td valign="top" width="600" style="font-size: 12px; color: #666666; line-height: 1.5; font-family: Arial; padding-bottom: 20px;">
+                                                <p style="margin: 0px; padding: 0px;"><span style="color: #88a017; font-size: 18px;">Lorem ipsum</span></p>
+                                                <p style="margin: 0px; padding: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut risus id lacus rutrum lobortis. Suspendisse eget risus id sapien luctus pharetra eget sed metus.</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table cellpadding="0" cellspacing="0" style="width: 100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td valign="top" width="600" style="font-size: 12px; color: #666666; line-height: 1.5; font-family: Arial;">
+                                                #[XMLBLOCK01:URL=http://www.yourdomain.com/products.xml|LOOP_ELEMENT=product|ITEMS=3]#
+                                                <h1>Category Name</h1>
+                                                #[XMLITEMS]#
+                                                <table border="0" cellpadding="0" cellspacing="0" style="padding: 0px; width: 100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding: 10px 10px 10px 10px;" valign="top" width="150">
+                                                                <img src="#[XMLITEM:image]#" border="0" alt="" width="150" height="150" style="display: block;"/>
+                                                            </td>
+                                                            <td style="padding: 10px 10px 10px 10px;" valign="top">
+                                                                <h2>#[XMLITEM:description]#</h2>
+                                                                <p> Price: #[XMLITEM:price]#</p>
+                                                                <p> Discount: #[XMLITEM:discount]#</p>
+                                                                <a href="#[XMLITEM:url]#" style="color: #006699; text-decoration: none;"> read more </a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                #[/XMLITEMS]#
+                                                #[/XMLBLOCK01]#
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table align="center" border="0" cellpadding="0" cellspacing="5" style="width: 100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td style="font-size: 11px; font-family: Arial; color: #666666;" align="center">This email was sent from #[CAMPAIGN:SENDER_NAME]# to <a href="mailto:#[EMAIL]#" target="_blank" style="font-size: 11px; font-family: Arial; color: #4d749c;">#[EMAIL]#</a>.</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-size: 11px; font-family: Arial; color: #666666;" align="center">#[LIST:COMPANY]# | #[LIST:ADDRESS]#</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-size: 11px; font-family: Arial; color: #666666;" align="center"><a href="#[LIST:URL]#" target="_blank" style="font-size: 11px; font-family: Arial; color: #4d749c;">Why am I receiving this email?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-size: 11px; font-family: Arial; color: #666666;" align="center"><a href="#[UNSUB]#" target="_blank" style="font-size: 11px; font-family: Arial; color: #4d749c;"> Click here to unsubscribe</a> | <a href="#[UPDATE_PROFILE]#" target="_blank" style="font-size: 11px; font-family: Arial; color: #4d749c;">Update your profile</a> | <a href="#[FORWARD]#" target="_blank" style="font-size: 11px; font-family: Arial; color: #4d749c;">Forward to a friend</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>                                
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>

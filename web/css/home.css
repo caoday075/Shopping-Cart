@@ -1,0 +1,65 @@
+.mainBody {
+	padding-top: 50px;
+}
+.show-cart li {
+  display: flex;
+}
+.cardList {
+	z-index: -1 !important;
+}
+.card {
+  margin-bottom: 20px;
+}
+.card-img-top {
+  width: 200px;
+  height: 200px;
+  align-self: center;
+}
+.card-block {
+	padding: 20px;
+}
+
+#myTab {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+.nav-item {
+	width: 80%;	
+}
+.bg-inverse {
+	background-color: white !important;
+}
+.cart {
+	padding: 8px 20px 0 0;
+	display: flex;
+	justify-content: flex-end;
+	position: absolute;
+	top: 5vw;
+}
+
+td {
+	width: 30px;
+}
+
+.slide-bar, .content {
+	padding-top: 30px;
+}
+
+.card-block > a {
+	border: none !important;
+	height: 40px !important;
+}
+.card-block > a:hover {
+  background: linear-gradient(
+    to top,
+    #ff6a00,
+    #ee0903
+  );
+  /*bottom: 5px;*/
+  /*letter-spacing: 4px;*/
+}
+.nav-item {
+	margin-bottom: 15px !important;
+}

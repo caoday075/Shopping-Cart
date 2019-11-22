@@ -1,0 +1,79 @@
+.header {   
+	background-color: #4caf50;
+	height: auto;	
+}
+.row {
+	height: 60px !important;
+}
+.titleWrapper {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.titleWrapper .title {
+	text-align: center;
+	color: white;
+	font-family: 'Pacifico', cursive;
+	margin:0 !important;
+}
+.ulHeader {
+	list-style-type: none;
+	margin: 0!important;
+	padding: 0 !important;
+}
+.ulHeader li {
+	float: left;	
+	/*background-color: white;*/
+	border-radius: 30px;	
+	width: 5rem;
+	height: 2rem;
+	text-align: center;
+	margin: 0 15px;
+	padding: 0.2vw 0.5vw;
+}
+.ulHeader li a {
+	/*color: #4caf50;	*/
+	color: white;	
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.2vmax;
+	cursor: pointer;
+}
+.ulHeader li:hover a, .ulHeader li:hover {
+	color: #4caf50 !important;	
+	background-color: white;
+}
+.link {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+.btnLogin {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;	
+}
+.btnLogin > a, i {
+	color: #4caf50;	
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.2vmax;
+	cursor: pointer;
+	color: white;
+}
+
+
+.inforFormWrapper > .row {
+	height: 40px !important;
+	margin-bottom: 15px !important;
+	margin-left: 30px !important;
+}

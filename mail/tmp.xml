@@ -1,0 +1,51 @@
+?xml version="1.0" encoding="UTF-8" standalone="yes"?
+<adsection>
+    Start LOOP_ELEMENT
+    <product>
+        <description>
+        [CDATA[ Here comes some description of the product or something like that ]]
+        </description>
+        <price>5,-</price>
+        <old_price>8,93</old_price>
+        <discount>44</discount>
+        <url>http://www.somedomain.com/product-nr-1</url>
+        <img alt="" src="null">http://www.somedomain.com/product-nr-1/image_name.jpg
+    </product>
+    End LOOP_ELEMENT
+    Start LOOP_ELEMENT
+    <product>
+        <description>
+        [CDATA[ Here comes some description of the product or something like that ]]
+        </description>
+        <price>9,90</price>
+        <old_price>30,-</old_price>
+        <discount>67</discount>
+        <url>http://www.somedomain.com/product-nr-2</url>
+        <img alt="" src="null">http://www.somedomain.com/product-nr-2/image_name.jpg
+    </product>
+    End LOOP_ELEMENT
+    Start LOOP_ELEMENT
+    <product>
+        <description>
+        [CDATA[ Here comes some description of the product or something like that ]]
+        </description>
+        <price>17,90</price>
+        <old_price>33,15</old_price>
+        <discount>46</discount>
+        <url>http://www.somedomain.com/product-nr-3</url>
+        <img alt="" src="null">http://www.somedomain.com/product-nr-3/image_name.jpg
+    </product>
+    End LOOP_ELEMENT
+    Start LOOP_ELEMENT
+    <product>
+        <description>
+        [CDATA[ Here comes some description of the product or something like that ]]
+        </description>
+        <price>3,90</price>
+        <old_price>10,-</old_price>
+        <discount>61</discount>
+        <url>http://www.somedomain.com/product-nr-4</url>
+        <img alt="" src="null">http://www.somedomain.com/product-nr-4/image_name.jpg
+    </product>
+    End LOOP_ELEMENT
+</adsection>
